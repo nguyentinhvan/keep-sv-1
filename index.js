@@ -31,11 +31,12 @@ app.engine('hbs', handlebars({
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'src','resources','views'))
 
-route(app)
 
 app.get('/api', (req,res) => {
+    console.log('okkkkkkk')
     res.send('okkkkkkkkkkkkk')
 })
+route(app)
 const job = require('./src/utill/keepserver')
 
 
