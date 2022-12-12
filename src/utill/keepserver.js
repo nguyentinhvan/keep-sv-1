@@ -9,6 +9,11 @@ const job = schedule.scheduleJob('*/10 * * * *', function(){
         console.log(res.body)
     }
     )
+    request(process.env.CLIENT_2,
+        (err, res)=>{
+            console.log(res.body)
+        }
+        )
 })
 
 module.exports = job
